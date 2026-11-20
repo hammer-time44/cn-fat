@@ -73,7 +73,7 @@
      },
      {
       "label": "ii",
-      "text": "ii. Consider the timeline diagram (Figure 1: RTS, CTS, DATA, ACK, NAV for nodes A, B, C, D). Comment on the positions of wireless nodes B, C and D with respect to the transmission range of A, and elaborate the process involved in the scenario. [3]",
+      "text": "ii. Consider the timeline diagram (Figure 1: RTS, CTS, DATA, ACK, NAV for nodes A, B, C, D). Comment on the positions of wireless nodes B, C and D with respect to the transmission range of A, and elaborate the process involved in the scenario. [3]\n{{fig:A1-25-26-fig1}}",
       "co": "CO3",
       "bl": "K4",
       "marks": "3",
@@ -125,7 +125,7 @@
     "parts": [
      {
       "label": "",
-      "text": "Two computers use stop-and-wait ARQ. RTT is 2 ms, timeout is twice the RTT, and both use sequence numbers on data and ACK frames. The sender sends 8 frames; the first 3 go through without incident (Figure 2). Draw the sequence of steps if:\ni. The 4th frame is lost on the first and second attempts, acknowledged after the third. [2]\nii. The 5th frame is lost on the first attempt, acknowledged after the second. [2]\niii. The 6th frame is sent and acknowledged without incident. [1]\niv. The 7th frame is sent without incident but its acknowledgment is lost the first time; acknowledged on the second attempt. [2]\nv. The 8th frame is sent and acknowledged without incident. How much time (in ms) did the 8 frames take in total? [3]",
+      "text": "Two computers use stop-and-wait ARQ. RTT is 2 ms, timeout is twice the RTT, and both use sequence numbers on data and ACK frames. The sender sends 8 frames; the first 3 go through without incident (Figure 2). Draw the sequence of steps if:\ni. The 4th frame is lost on the first and second attempts, acknowledged after the third. [2]\nii. The 5th frame is lost on the first attempt, acknowledged after the second. [2]\niii. The 6th frame is sent and acknowledged without incident. [1]\niv. The 7th frame is sent without incident but its acknowledgment is lost the first time; acknowledged on the second attempt. [2]\nv. The 8th frame is sent and acknowledged without incident. How much time (in ms) did the 8 frames take in total? [3]\n{{fig:A1-25-26-fig2}}",
       "co": "CO3",
       "bl": "K3",
       "marks": "10",
@@ -142,7 +142,7 @@
     "parts": [
      {
       "label": "i",
-      "text": "i. Figure 3 plots congestion window size against transmission round.\na) Identify the time intervals of TCP slow start. [1]\nb) Identify the time intervals of TCP congestion avoidance. [1]\nc) What is the initial value of ssthresh at the first transmission phase? [1]\nd) After the 11th RTT, is the segment loss detected by a triple duplicate ACK or a timeout? [2]\ne) After the 14th RTT, is the loss detected by a triple duplicate ACK or a timeout? What will ssthresh and cwnd update to? [2]",
+      "text": "i. Figure 3 plots congestion window size against transmission round.\n{{fig:A1-25-26-fig3}}\na) Identify the time intervals of TCP slow start. [1]\nb) Identify the time intervals of TCP congestion avoidance. [1]\nc) What is the initial value of ssthresh at the first transmission phase? [1]\nd) After the 11th RTT, is the segment loss detected by a triple duplicate ACK or a timeout? [2]\ne) After the 14th RTT, is the loss detected by a triple duplicate ACK or a timeout? What will ssthresh and cwnd update to? [2]",
       "co": "CO5",
       "bl": "",
       "marks": "7",
@@ -395,7 +395,7 @@
     "parts": [
      {
       "label": "",
-      "text": "You are the network engineer of an organization with 3 business units: Engineering (120 addresses), Finance (60) and Administration (30), connected via an access router (Fig. 1). The ISP assigned the classless block 128.64.0.0/24.\n(i) Find the total number and range of addresses allotted to the organization. [2]\n(ii) Find the range of addresses for each business unit with its subnet prefix/mask. [6]\n(iii) Analyze the unallocated addresses left after allocation. [2]",
+      "text": "You are the network engineer of an organization with 3 business units: Engineering (120 addresses), Finance (60) and Administration (30), connected via an access router (Fig. 1). The ISP assigned the classless block 128.64.0.0/24.\n{{fig:C2-22-23-fig1}}\n(i) Find the total number and range of addresses allotted to the organization. [2]\n(ii) Find the range of addresses for each business unit with its subnet prefix/mask. [6]\n(iii) Analyze the unallocated addresses left after allocation. [2]",
       "co": "",
       "bl": "",
       "marks": "10",
@@ -412,7 +412,7 @@
     "parts": [
      {
       "label": "",
-      "text": "Interpret Fig. 2 comprising several networks interconnected by routers with RIP enabled. What is the initial routing table of R1 and, after RIP is enabled, compute the routing table of Router R1 and illustrate the process carried out by RIP.",
+      "text": "Interpret Fig. 2 comprising several networks interconnected by routers with RIP enabled. What is the initial routing table of R1 and, after RIP is enabled, compute the routing table of Router R1 and illustrate the process carried out by RIP.\n{{fig:C2-22-23-fig2}}",
       "co": "",
       "bl": "",
       "marks": "10",
@@ -429,7 +429,7 @@
     "parts": [
      {
       "label": "",
-      "text": "Explain with necessary diagrams how TCP uses congestion control to alleviate congestion in the network. Also interpret the Fig. 3 graph of congestion window size as a function of transmission round.",
+      "text": "Explain with necessary diagrams how TCP uses congestion control to alleviate congestion in the network. Also interpret the Fig. 3 graph of congestion window size as a function of transmission round.\n{{fig:C2-22-23-fig3}}",
       "co": "",
       "bl": "",
       "marks": "10",
@@ -630,7 +630,7 @@
     "parts": [
      {
       "label": "",
-      "text": "Evaluate the shortest path of all the links to A using Dijkstra's algorithm (weighted graph given in the paper).",
+      "text": "Evaluate the shortest path of all the links to A using Dijkstra's algorithm (weighted graph given in the paper).\n{{fig:D1-23-24-fig7}}",
       "co": "",
       "bl": "",
       "marks": "10",
@@ -826,7 +826,7 @@
     "parts": [
      {
       "label": "a",
-      "text": "For the network diagram provided, demonstrate the process of the Distance Vector Routing algorithm to determine the minimum cost paths from Node F to all other nodes. Explicitly list all shortest path routes from F and illustrate each step using diagrams.",
+      "text": "For the network diagram provided, demonstrate the process of the Distance Vector Routing algorithm to determine the minimum cost paths from Node F to all other nodes. Explicitly list all shortest path routes from F and illustrate each step using diagrams.\n{{fig:D1-24-25-fig6}}",
       "co": "",
       "bl": "",
       "marks": "7",
@@ -936,7 +936,7 @@
      },
      {
       "label": "b",
-      "text": "Use the link state routing algorithm to find the shortest path from node E to all other nodes and show the forwarding table at node E. Analyse the challenges in link state routing.",
+      "text": "Use the link state routing algorithm to find the shortest path from node E to all other nodes and show the forwarding table at node E. Analyse the challenges in link state routing.\n{{fig:D1-24-25-fig10}}",
       "co": "",
       "bl": "",
       "marks": "10",
@@ -1469,7 +1469,7 @@
     "parts": [
      {
       "label": "a",
-      "text": "i. An autonomous system has 6 routers (A-F) connected by links with time costs (A-C 2, C-F 18, A-D 10, C-D 1, D-F 6, B-D 2, D-E 11, E-F 2, B-E 1). The distance vector algorithm is used. 1. Write the initial distance table of Router C. [2] 2. Find the shortest path from node C to all others. [4]\nii. In distance vector, what problem is encountered in deciding whether a host has become unreachable? In what circumstances is it impossible to resolve this problem? [4]",
+      "text": "i. An autonomous system has 6 routers (A-F) connected by links with time costs (A-C 2, C-F 18, A-D 10, C-D 1, D-F 6, B-D 2, D-E 11, E-F 2, B-E 1). The distance vector algorithm is used. 1. Write the initial distance table of Router C. [2] 2. Find the shortest path from node C to all others. [4]\n{{fig:F1-25-26-fig10a}}\nii. In distance vector, what problem is encountered in deciding whether a host has become unreachable? In what circumstances is it impossible to resolve this problem? [4]",
       "co": "CO4",
       "bl": "BL3",
       "marks": "10",
@@ -1479,7 +1479,7 @@
      },
      {
       "label": "b",
-      "text": "In a network the weights are given by link-state packets and contain information such as the routers and traffic costs. Find the shortest path from node F to all others (directed graph given in the paper).",
+      "text": "In a network the weights are given by link-state packets and contain information such as the routers and traffic costs. Find the shortest path from node F to all others (directed graph given in the paper).\n{{fig:F1-25-26-fig10b}}",
       "co": "CO4",
       "bl": "BL3",
       "marks": "10",
@@ -1664,7 +1664,7 @@
     "parts": [
      {
       "label": "a",
-      "text": "Find the shortest path from source node A to all other nodes using Dijkstra's algorithm for the autonomous network diagram shown in the paper.",
+      "text": "Find the shortest path from source node A to all other nodes using Dijkstra's algorithm for the autonomous network diagram shown in the paper.\n{{fig:F2-25-26-fig9a}}",
       "co": "CO4",
       "bl": "BL4",
       "marks": "10",
@@ -1674,7 +1674,7 @@
      },
      {
       "label": "b",
-      "text": "Distance vector routing is implemented where each router shares its routing table with neighbours periodically; topology changes and link failures require efficient updates. Node A is the source.\ni. Explain the working of distance vector routing. [3]\nii. Using the Bellman-Ford algorithm compute the shortest path from A to all other nodes, showing all steps and distance updates in each iteration. [5]\niii. Discuss how node and link failures are detected and addressed in distance vector routing. [2]",
+      "text": "Distance vector routing is implemented where each router shares its routing table with neighbours periodically; topology changes and link failures require efficient updates. Node A is the source.\n{{fig:F2-25-26-fig9b}}\ni. Explain the working of distance vector routing. [3]\nii. Using the Bellman-Ford algorithm compute the shortest path from A to all other nodes, showing all steps and distance updates in each iteration. [5]\niii. Discuss how node and link failures are detected and addressed in distance vector routing. [2]",
       "co": "CO4",
       "bl": "BL4",
       "marks": "10",
@@ -1841,7 +1841,7 @@
     "parts": [
      {
       "label": "",
-      "text": "Calculate the LSP for nodes A, B and E, and give the steps to be followed in Link State Routing. Apply Dijkstra's algorithm to the given graph (A-B 12, A-C 7, A-D 10, B-C 3, B-E 4, C-E 9) to form the shortest path tree and construct the routing table for Node A, the root node.",
+      "text": "Calculate the LSP for nodes A, B and E, and give the steps to be followed in Link State Routing. Apply Dijkstra's algorithm to the given graph (A-B 12, A-C 7, A-D 10, B-C 3, B-E 4, C-E 9) to form the shortest path tree and construct the routing table for Node A, the root node.\n{{fig:G2-25-26-fig7}}",
       "co": "CO4",
       "bl": "BL3",
       "marks": "10",

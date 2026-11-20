@@ -194,7 +194,7 @@ code { font-family: var(--font-mono); background: var(--bg-raised); padding: 2px
 .ov-b u { display: block; height: 100%; background: var(--grad); border-radius: 999px; transition: width 400ms var(--ease); }
 button.qn { border: 0; cursor: pointer; font-family: inherit; transition: transform var(--t); }
 button.qn:hover { transform: scale(1.1); }
-.q.done .qn { font-size: 0; } .q.done .qn::after { content: "\2713"; font-size: 18px; }
+.q.done .qn { font-size: 0; } .q.done .qn::after { content: "¹3"; font-size: 18px; }
 .q.done .qb { opacity: 0.5; }
 @media (max-width: 720px) { .overall { padding: var(--s2); gap: var(--s2); } .ov-m { min-width: 100%; gap: 8px; } }
 
@@ -214,10 +214,10 @@ button.qn:hover { transform: scale(1.1); }
   --orb1: rgba(250,204,21,0.2); --orb2: rgba(250,204,21,0.1); --orb3: rgba(250,204,21,0.12);
   --sh: 0 1px 0 rgba(255,255,255,0.09) inset, 0 12px 32px -14px rgba(0,0,0,0.75);
 }
-body::before { content: ""; position: fixed; inset: -10%; z-index: 0; pointer-events: none;
+body::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 100vh; z-index: 0; pointer-events: none;
   background: radial-gradient(38% 34% at 18% 12%, var(--orb1), transparent 70%), radial-gradient(34% 32% at 86% 22%, var(--orb2), transparent 70%), radial-gradient(40% 36% at 55% 96%, var(--orb3), transparent 70%);
   animation: drift 26s ease-in-out infinite alternate; }
-@keyframes drift { to { transform: translate3d(2.5%, -2%, 0) scale(1.06); } }
+@keyframes drift { to { transform: translate3d(0, -3%, 0); } }
 .app { position: relative; z-index: 1; }
 
 .icon-btn, .fat-btn, .back-btn, .tabs, .composer, .pill, .chip.p2, .tc, .mk, .q, .none, .tab-pill.act:not(.paper), .tab-pill.hov {
@@ -309,7 +309,9 @@ html, body { height: 100%; } body { padding: 0; }
 .tq .qn { background: var(--pc); color: #0b0b0c; }
 .tq .q:hover { box-shadow: var(--sh-up), 0 0 0 2px var(--pc); }
 .pb-h { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.pb-ref { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--text-secondary); }
+a.pb-ref { text-decoration: none; }
+a.pb-ref:hover { color: var(--text-primary); text-decoration: underline; text-underline-offset: 3px; }
+.pb-ref { cursor: pointer; user-select: none; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--text-secondary); }
 .pb-ref::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--pc); }
 .pb-open { margin-left: auto; }
 .tchip.all { font-weight: 700; }
@@ -394,3 +396,4 @@ a.mchip.pb-open:hover { color: var(--text-primary); border-color: var(--text-mut
 .tc::before, .q::before, .mk::before { display: none !important; }
 .mk span { display: flex; flex-direction: column; align-items: center; line-height: 1.1; } .mk span small { font-size: 11px; font-weight: 600; letter-spacing: 0; margin-top: 3px; opacity: 0.75; white-space: nowrap; }
 @media (max-width: 640px) { .mk span small { font-size: 8px; margin-top: 1px; } }
+

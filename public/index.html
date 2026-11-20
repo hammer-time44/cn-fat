@@ -15,15 +15,11 @@
       r.setAttribute("data-theme", t); r.setAttribute("data-mode", m);
     })();
   </script>
-  <link rel="modulepreload" href="js/app.js">
-  <link rel="modulepreload" href="js/api.js">
-  <link rel="preload" href="data/modules.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="data/papers.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="data/topics.json" as="fetch" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
   <a class="skip" href="#body">Skip to content</a>
@@ -64,7 +60,7 @@
               <li><i class="g-pill">PAPER</i><span>Scanned page at that question</span></li>
               <li><i class="g-pill">OPEN</i><span>Jump to it in its paper</span></li>
               <li><i class="g-chip">M1</i><span>Module &mdash; tap to open it</span></li>
-              <li><i class="g-pill">tab&times;2</i><span>Double-click tab = original PDF</span></li>
+              <li><i class="g-pill">tab&times;2</i><span>Double-click tab = original PDF · double-click paper tag = new tab</span></li>
               <li><i class="g-pill">topic &rarr;</i><span>Home topic opens its questions</span></li>
               <li><i class="g-pill">q5</i><span>Search words or question no.</span></li>
             </ul>
@@ -109,6 +105,7 @@
   </div>
 
   <script type="module" src="js/app.js"></script>
+
   <script>if ("serviceWorker" in navigator) addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });</script>
 </body>
 </html>

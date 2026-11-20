@@ -194,9 +194,7 @@ const imgSrc = (kind, name) => "papers/" + kind + "/" + name + ".jpg";
 const pdfSrc = (id) => "papers/pdf/" + id + ".pdf";
 /* Double-click a paper tab to open the original PDF in a new tab. */
 function openPdf(id) {
-  const w = window.open("about:blank", "_blank");
-  const u = pdfSrc(id);
-  if (w) w.location.href = u; else window.location.href = u;
+  window.open(pdfSrc(id), "_blank");
 }
 /* Question text keeps the paper's own line breaks; {{fig:NAME}} drops in the exact diagram cut from the paper. */
 function richText(text, label) {
@@ -345,7 +343,7 @@ function topicProblems(t) {
 function problemHtml(x) {
   const id = x.paper.id.toLowerCase();
   const lv = leafKeys(id, x.question, x.parts), allLv = leafKeys(id, x.question), bk = baseKey(id, x.question), qd = leavesDone(lv, bk);
-  let h = '<li class="q' + (qd ? " done" : "") + '" data-paper="' + id + '"><button class="qn" type="button" data-leaves="' + lv.join(",") + '" data-base="' + bk + '" data-all="' + allLv.join(",") + '" aria-pressed="' + qd + '" aria-label="Mark question ' + x.question.number + ' as solved">' + x.question.number + '</button><div class="qb"><div class="pb-h"><span class="pb-ref">' + esc(x.paper.id) + " · " + esc(x.label) + '</span>' + paperBtn(x.paper.id, x.label, x.parts[0].pg ? x.parts[0] : x.question, "pb-paper") + '<a class="mchip pb-open" href="#fat-' + id + '" data-go="fat-' + id + '" data-q="' + x.question.number + '">Open</a></div>';
+  let h = '<li class="q' + (qd ? " done" : "") + '" data-paper="' + id + '"><button class="qn" type="button" data-leaves="' + lv.join(",") + '" data-base="' + bk + '" data-all="' + allLv.join(",") + '" aria-pressed="' + qd + '" aria-label="Mark question ' + x.question.number + ' as solved">' + x.question.number + '</button><div class="qb"><div class="pb-h"><a class="pb-ref" href="#fat-' + x.paper.id.toLowerCase() + '-q' + x.question.number + '" target="_blank" rel="noopener" title="Open ' + esc(x.paper.id) + ' Q' + x.question.number + ' in a new tab (double-click)">' + esc(x.paper.id) + " · " + esc(x.label) + '</a>' + paperBtn(x.paper.id, x.label, x.parts[0].pg ? x.parts[0] : x.question, "pb-paper") + '<a class="mchip pb-open" href="#fat-' + id + '" data-go="fat-' + id + '" data-q="' + x.question.number + '">Open</a></div>';
   x.parts.forEach((part, j) => {
     if (j > 0 && !part.and) h += '<div class="or">OR</div>';
     h += partHtml(part);
@@ -525,6 +523,15 @@ function initTabFx() {
     pillHov.style.opacity = t.getAttribute("aria-selected") === "true" ? "0" : "1";
   });
   tabsEl.addEventListener("pointerleave", () => { if (pillHov) pillHov.style.opacity = "0"; });
+  /* Topic-wise: double-click a question's paper tag (e.g. "A1-25-26 \u00b7 Q4") to open the original PDF. */
+  bodyEl.addEventListener("click", (e) => { if (e.target.closest && e.target.closest("a.pb-ref")) e.preventDefault(); });
+  bodyEl.addEventListener("dblclick", (e) => {
+    const r = e.target.closest ? e.target.closest("a.pb-ref") : null;
+    if (!r) return;
+    e.preventDefault();
+    const a = document.createElement("a"); a.href = r.getAttribute("href"); a.target = "_blank"; a.rel = "noopener";
+    document.body.appendChild(a); a.click(); a.remove();
+  });
   tabsEl.addEventListener("dblclick", (e) => {
     const t = e.target.closest ? e.target.closest(".tab") : null;
     if (t && view === "fat" && t.dataset.paper) { e.preventDefault(); const p = PAPERS.find((x) => x.id.toLowerCase() === t.dataset.paper); if (p) openPdf(p.id); }
@@ -614,7 +621,9 @@ function parse(hash) {
     curT = i === -1 ? 0 : i;
   } else if (h.startsWith("fat")) {
     view = "fat";
-    const id = h.slice(4);
+    let id = h.slice(4);
+    const dq = id.match(/^(.+)-q(\d+)$/);
+    if (dq) { id = dq[1]; pendingQ = dq[2]; }
     const i = PAPERS.findIndex((p) => p.id.toLowerCase() === id);
     curP = i === -1 ? 0 : i;
   } else {
@@ -782,7 +791,13 @@ async function init() {
   }
   parse(location.hash);
   render();
+  if (pendingQ && view === "fat") {
+    const el = bodyEl.querySelector('.q[data-qn="' + pendingQ + '"]');
+    if (el) el.scrollIntoView({ block: "start", behavior: "auto" });
+  }
+  pendingQ = null;
 }
 
 init();
+
 
