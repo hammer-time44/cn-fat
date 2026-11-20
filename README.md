@@ -1,4 +1,4 @@
-# CN (Computer Networks) FAT Prep
+# CN FAT Prep
 
 Computer Networks: module priorities and FAT question papers.
 
