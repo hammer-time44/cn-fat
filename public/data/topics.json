@@ -1,0 +1,295 @@
+[
+ {
+  "id": "m1",
+  "topics": [
+   {
+    "topic": "Network Topologies & Network Design",
+    "refs": [
+     "A1-25-26-Q1",
+     "C2-22-23-Q1",
+     "D1-23-24-Q1(a)",
+     "D1-24-25-Q1(a)",
+     "D2-24-25-Q1",
+     "F1-25-26-Q1"
+    ]
+   },
+   {
+    "topic": "OSI Model & Layered Architecture",
+    "refs": [
+     "A1-25-26-Q5",
+     "C2-22-23-Q7",
+     "F1-25-26-Q2(a)",
+     "F1-25-26-Q2(b)",
+     "F2-25-26-Q1(a)",
+     "F2-25-26-Q1(b)",
+     "G2-25-26-Q1"
+    ]
+   },
+   {
+    "topic": "Protocols, Standards & TCP/IP",
+    "refs": [
+     "D1-23-24-Q1(b)",
+     "D1-24-25-Q1(b)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m2",
+  "topics": [
+   {
+    "topic": "Delay, Latency & Data Rate Calculations",
+    "refs": [
+     "A1-25-26-Q6",
+     "C2-22-23-Q8",
+     "D1-23-24-Q2(a)",
+     "D1-24-25-Q2(a)",
+     "D2-24-25-Q2",
+     "F1-25-26-Q3",
+     "F2-25-26-Q2"
+    ]
+   },
+   {
+    "topic": "Circuit vs Packet Switching",
+    "refs": [
+     "A1-25-26-Q2",
+     "C2-22-23-Q2",
+     "D1-23-24-Q2(b)",
+     "D1-24-25-Q2(b)",
+     "G2-25-26-Q2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m3",
+  "topics": [
+   {
+    "topic": "Multiple Access: ALOHA, CSMA, CSMA/CD & CSMA/CA",
+    "refs": [
+     "A1-25-26-Q4(i)",
+     "C2-22-23-Q3",
+     "D1-24-25-Q3",
+     "D1-24-25-Q9(b)",
+     "D2-24-25-Q9(a)",
+     "D2-24-25-Q9(b)",
+     "F1-25-26-Q9(a)(ii)",
+     "F2-25-26-Q10(b)(ii)",
+     "G2-25-26-Q3"
+    ]
+   },
+   {
+    "topic": "Error Detection: Parity, Checksum & CRC",
+    "refs": [
+     "A1-25-26-Q3",
+     "D1-24-25-Q9(a)",
+     "D2-24-25-Q3(a)",
+     "D2-24-25-Q3(b)",
+     "F1-25-26-Q9(b)",
+     "G2-25-26-Q4"
+    ]
+   },
+   {
+    "topic": "Flow Control: Stop-and-Wait, Go-Back-N & Selective Repeat",
+    "refs": [
+     "A1-25-26-Q7",
+     "C2-22-23-Q9",
+     "D1-23-24-Q3",
+     "F1-25-26-Q9(a)",
+     "F2-25-26-Q10(b)"
+    ]
+   },
+   {
+    "topic": "Hamming Code",
+    "refs": [
+     "D1-23-24-Q4(a)",
+     "F2-25-26-Q10(a)"
+    ]
+   },
+   {
+    "topic": "IEEE 802.3, 802.11, Bluetooth & RFID",
+    "refs": [
+     "A1-25-26-Q4(ii)",
+     "D1-23-24-Q4(b)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m4",
+  "topics": [
+   {
+    "topic": "Subnetting & Classless Addressing (CIDR)",
+    "refs": [
+     "A1-25-26-Q10(b)",
+     "C2-22-23-Q10",
+     "D1-23-24-Q6",
+     "D1-24-25-Q4",
+     "D2-24-25-Q4",
+     "F1-25-26-Q4",
+     "F2-25-26-Q4",
+     "G2-25-26-Q5"
+    ]
+   },
+   {
+    "topic": "IPv4 / IPv6 Addressing & Header Format",
+    "refs": [
+     "A1-25-26-Q10(a)",
+     "C2-22-23-Q4",
+     "D1-23-24-Q5(a)",
+     "D1-23-24-Q5(b)",
+     "D1-24-25-Q5(a)",
+     "D2-24-25-Q5",
+     "D2-24-25-Q10(a)",
+     "F1-25-26-Q5(ii)",
+     "F1-25-26-Q5(iii)"
+    ]
+   },
+   {
+    "topic": "IP Fragmentation & MTU",
+    "refs": [
+     "D1-24-25-Q10(a)",
+     "F1-25-26-Q5(i)",
+     "F2-25-26-Q3",
+     "G2-25-26-Q6"
+    ]
+   },
+   {
+    "topic": "Network Address Translation (NAT)",
+    "refs": [
+     "D1-24-25-Q5(b)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m5",
+  "topics": [
+   {
+    "topic": "Link State Routing & Dijkstra",
+    "refs": [
+     "A1-25-26-Q11",
+     "D1-23-24-Q7",
+     "D1-24-25-Q10(b)",
+     "D2-24-25-Q6(a)",
+     "D2-24-25-Q10(b)",
+     "F1-25-26-Q10(b)",
+     "F2-25-26-Q9(a)",
+     "G2-25-26-Q7"
+    ]
+   },
+   {
+    "topic": "Distance Vector Routing (RIP, Bellman-Ford)",
+    "refs": [
+     "C2-22-23-Q5",
+     "C2-22-23-Q11",
+     "D1-24-25-Q6(a)",
+     "D1-24-25-Q6(b)",
+     "D2-24-25-Q6(b)",
+     "F1-25-26-Q10(a)",
+     "F2-25-26-Q9(b)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m6",
+  "topics": [
+   {
+    "topic": "TCP Congestion Control & Avoidance",
+    "refs": [
+     "A1-25-26-Q8(i)",
+     "C2-22-23-Q12",
+     "D2-24-25-Q7(ii)",
+     "F1-25-26-Q6(ii)",
+     "G2-25-26-Q8"
+    ]
+   },
+   {
+    "topic": "Open Loop & Closed Loop Congestion Control",
+    "refs": [
+     "A1-25-26-Q8(ii)",
+     "D1-23-24-Q9",
+     "D1-24-25-Q7",
+     "F2-25-26-Q5"
+    ]
+   },
+   {
+    "topic": "Queuing Mechanisms & QoS Parameters",
+    "refs": [
+     "D2-24-25-Q7(i)",
+     "F1-25-26-Q1(iv)",
+     "G2-25-26-Q9(a)",
+     "G2-25-26-Q9(b)"
+    ]
+   },
+   {
+    "topic": "Leaky Bucket, Token Bucket & Traffic Shaping",
+    "refs": [
+     "F1-25-26-Q7(ii)",
+     "F2-25-26-Q6"
+    ]
+   },
+   {
+    "topic": "TCP Segments, Header, Flow Control & TCP vs UDP",
+    "refs": [
+     "C2-22-23-Q6",
+     "F1-25-26-Q6(i)",
+     "F1-25-26-Q7(i)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m7",
+  "topics": [
+   {
+    "topic": "Domain Name System (DNS)",
+    "refs": [
+     "A1-25-26-Q9",
+     "D1-23-24-Q8",
+     "D1-24-25-Q8(a)",
+     "F1-25-26-Q8(ii)",
+     "F2-25-26-Q7(i)",
+     "G2-25-26-Q10(a)"
+    ]
+   },
+   {
+    "topic": "HTTP",
+    "refs": [
+     "C2-22-23-Q13(a)",
+     "C2-22-23-Q13(b)",
+     "D1-24-25-Q8(b)",
+     "D2-24-25-Q8(ii)"
+    ]
+   },
+   {
+    "topic": "FTP",
+    "refs": [
+     "D2-24-25-Q8",
+     "F1-25-26-Q8(i)"
+    ]
+   },
+   {
+    "topic": "SMTP & Email",
+    "refs": [
+     "D2-24-25-Q8(iii)",
+     "F2-25-26-Q7(ii)"
+    ]
+   },
+   {
+    "topic": "Application Layer Protocols, IoT & Security",
+    "refs": [
+     "D1-23-24-Q10",
+     "G2-25-26-Q10(b)"
+    ]
+   },
+   {
+    "topic": "SNMP",
+    "refs": [
+     "F2-25-26-Q8"
+    ]
+   }
+  ]
+ }
+]

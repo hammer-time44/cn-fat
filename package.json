@@ -1,0 +1,12 @@
+{
+  "name": "cn-exam-prep",
+  "version": "2.0.0",
+  "description": "Computer Networks: module priorities and FAT question papers (static site)",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/dev-server.js",
+    "test": "node scripts/check.js"
+  },
+  "engines": { "node": ">=16" },
+  "license": "MIT"
+}

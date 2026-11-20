@@ -1,0 +1,1929 @@
+[
+ {
+  "id": "A1-25-26",
+  "exam": "Final Assessment Test – Nov/Dec 2025",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "A1+TA1",
+  "note": "Section I: 4 x 5 · Section II: 5 x 10 · Section III: 2 x 15 (100 Marks)",
+  "pages": 4,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "",
+      "text": "A hospital network uses star topology for medical devices in each department and bus topology to connect departments to the central server. A single cable failure in the bus segment caused multiple star-connected devices to lose connectivity intermittently. Analyze why this hybrid topology created unexpected interdependencies and propose an improved topology that stays cost-effective while removing this vulnerability.",
+      "co": "CO1",
+      "bl": "K4",
+      "marks": "5",
+      "modules": [
+       "m1"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.443
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "",
+      "text": "All network sources are bursty (they only occasionally have data to send). Would packet switching or circuit switching be more desirable? Compare packet switching with circuit switching for this traffic scenario.",
+      "co": "CO2",
+      "bl": "K2",
+      "marks": "5",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.598
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "Seven 7-bit data streams: 1110110, 1101010, 0111110, 0110100, 1100010, 0010101, 1100000. A row parity bit is added to every 7 bits to make a byte, and an extra byte is added for column parity (even parity). Determine all the row and column parity bits.\ni. Can this code identify all two-bit errors?\nii. Can this code identify all three-bit errors?\nJustify your answers.",
+      "co": "CO3",
+      "bl": "K3",
+      "marks": "5",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.678
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. Can CSMA/CD be used in wireless networks? Justify. [2]",
+      "co": "CO3",
+      "bl": "K4",
+      "marks": "2",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. Consider the timeline diagram (Figure 1: RTS, CTS, DATA, ACK, NAV for nodes A, B, C, D). Comment on the positions of wireless nodes B, C and D with respect to the transmission range of A, and elaborate the process involved in the scenario. [3]",
+      "co": "CO3",
+      "bl": "K4",
+      "marks": "3",
+      "modules": [
+       "m3"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.812
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "",
+      "text": "A multinational banking system's real-time transaction network has data corrupted in transmission between intermediate nodes. Using the OSI model and peer-to-peer processes:\ni. How does OSI's architecture help isolate errors? [2]\nii. Evaluate the role of Network Support Layers (Physical, Data Link, Network) versus User Support Layers (Session, Presentation, Application) in ensuring end-to-end data integrity, considering peer-to-peer protocols at each layer. [4]\niii. Compare error control at the Data Link layer versus the Transport layer for financial transactions, considering segmentation and reassembly. [4]",
+      "co": "CO1",
+      "bl": "K2",
+      "marks": "10",
+      "modules": [
+       "m1"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.215
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "",
+      "text": "Sender and receiver are separated by three switches in cascade. Links 1 and 2 operate at 1 Gbps, links 3 and 4 at 2 Gbps. Packet size is 5000 bits and each link has 10 microsecond propagation delay. A switch forwards immediately after receiving the last bit of the packet; queues are empty.\ni. Calculate the latency (first bit sent to last bit received). [6]\nii. Will queueing develop in the switches? Justify. [2]\niii. Calculate the latency if circuit switching is used and circuit setup takes 10 microseconds. [2]",
+      "co": "CO2",
+      "bl": "K4",
+      "marks": "10",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.404
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "",
+      "text": "Two computers use stop-and-wait ARQ. RTT is 2 ms, timeout is twice the RTT, and both use sequence numbers on data and ACK frames. The sender sends 8 frames; the first 3 go through without incident (Figure 2). Draw the sequence of steps if:\ni. The 4th frame is lost on the first and second attempts, acknowledged after the third. [2]\nii. The 5th frame is lost on the first attempt, acknowledged after the second. [2]\niii. The 6th frame is sent and acknowledged without incident. [1]\niv. The 7th frame is sent without incident but its acknowledgment is lost the first time; acknowledged on the second attempt. [2]\nv. The 8th frame is sent and acknowledged without incident. How much time (in ms) did the 8 frames take in total? [3]",
+      "co": "CO3",
+      "bl": "K3",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.578
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. Figure 3 plots congestion window size against transmission round.\na) Identify the time intervals of TCP slow start. [1]\nb) Identify the time intervals of TCP congestion avoidance. [1]\nc) What is the initial value of ssthresh at the first transmission phase? [1]\nd) After the 11th RTT, is the segment loss detected by a triple duplicate ACK or a timeout? [2]\ne) After the 14th RTT, is the loss detected by a triple duplicate ACK or a timeout? What will ssthresh and cwnd update to? [2]",
+      "co": "CO5",
+      "bl": "",
+      "marks": "7",
+      "modules": [
+       "m6"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. Explain any one open loop congestion control method. [3]",
+      "co": "CO5",
+      "bl": "",
+      "marks": "3",
+      "modules": [
+       "m6"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.197
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "",
+      "text": "i. A DNS domain name is ece.chennai.vit.ac.in. [5]\na. Name the labels.\nb. How many levels of hierarchy are involved?\nc. Is it an FQDN or PQDN?\nd. Name the domain type.\ne. Why do we need DNS when we can use an IP address directly?\nii. Differentiate between recursive and iterative resolution in DNS. [5]",
+      "co": "CO5",
+      "bl": "K1",
+      "marks": "10",
+      "modules": [
+       "m7"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.703
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Why does classful addressing suffer from wastage of addresses? Briefly explain with justifications.",
+      "co": "CO4",
+      "bl": "K2",
+      "marks": "5",
+      "modules": [
+       "m4"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "VIT university is deploying a campus network using the IP block 172.16.8.0/23. Each department must have its own subnet (Table 1: Engineering Block 120 hosts, Science Block 60, Library & Learning Center 25, Administration 10, Wi-Fi Access Network 30).\na) Perform subnetting using appropriate block sizes. Indicate for each subnet: network ID, broadcast ID, usable host range and subnet mask. [8]\nb) Determine the IP block range used and the remaining unused. [2]",
+      "co": "CO4",
+      "bl": "K2",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.914
+   },
+   {
+    "number": 11,
+    "parts": [
+     {
+      "label": "",
+      "text": "A network graph has links with bandwidth (Mbps) and delay (ms) (Table 2: A-B 50/10, A-C 25/25, B-D 20/10, B-E 30/9, C-D 40/8, D-E 25/15, D-F 10/10, E-F 20/2). Link cost = (delay / bandwidth) x 100, lower is better. All routers use link-state routing (like OSPF).\n(i) Compute and tabulate the link costs for all links and draw the weighted graph. [5]\n(ii) Apply Dijkstra's algorithm from node A, showing all intermediate steps. [8]\n(iii) Prepare A's routing table, showing each destination. [2]",
+      "co": "CO4",
+      "bl": "K3",
+      "marks": "15",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 4,
+    "y": 0.284
+   }
+  ]
+ },
+ {
+  "id": "C2-22-23",
+  "exam": "Final Assessment Test – July/August 2023",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "C2",
+  "note": "Part A: 6 x 5 · Part B: 7 x 10 (100 Marks)",
+  "pages": 3,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "",
+      "text": "Enlist the different types of network topologies and discuss in detail any two with neat illustrations.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m1"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.21
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "",
+      "text": "Differentiate packet switching from circuit switching. For voice traffic which switching technique is more suitable? Discuss with respect to QoS.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.285
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "A network using CSMA/CD has a bandwidth of 10 Mbps. If the maximum propagation time (including delay in the devices and ignoring the jamming signal time) is 25.6 microseconds, what is the minimum size of the frame?",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.368
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "",
+      "text": "(i) Change the IPv4 address from binary 01111111 11110000 01100111 01111101 to dotted-decimal. [1]\n(ii) Change 129.14.6.8 from dotted-decimal to binary. [1]\n(iii) Show the shortest form of the IPv6 address 2340:0000:0000:0000:0000:119A:A001:0000. [1]\n(iv) Show the original (unabbreviated) form of the IPv6 address 0:1234::3. [2]",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.449
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "",
+      "text": "Compare and contrast the Distance Vector and Link State routing approaches.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.588
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "",
+      "text": "A TCP connection is transferring a file of 5000 bytes. The first byte is numbered 10,001. What are the sequence numbers for each segment if data are sent in five segments, each carrying 1000 bytes?",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.607
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "",
+      "text": "If you would like to take up a job profile such as network architect, design engineer, support engineer, network admin or tester, you are required to provide services and solutions at any layer. Justify that you are eligible for that role by elaborating the functionalities and services provided by the ISO standardized OSI model, with a neat illustration.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m1"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.704
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "",
+      "text": "Consider 6 hops (point-to-point links) between two terminal nodes; transmission rate 9600 bps on all links; 1 ms per-hop signal propagation delay; 1 second call set-up time for the circuit-switched connection across 6 hops; message size 10000 bits; each packet is 2048 bits (2000 bits message + 48 bits header/trailer overhead). Find the total time delay for both the circuit and packet switching networks.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.784
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "",
+      "text": "Using the Selective Repeat protocol, draw a flow diagram of a sender with window size 4 and six data frames to send. Label all data frames with sequence numbers and returning ACKs with the corresponding numbers.\n(i) Assume no frame is lost during transmission. Show how the window slides as acknowledgements come in and new frames are transmitted.\n(ii) Redo the problem showing what happens when the 2nd data frame (SN=1) is lost.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.881
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "",
+      "text": "You are the network engineer of an organization with 3 business units: Engineering (120 addresses), Finance (60) and Administration (30), connected via an access router (Fig. 1). The ISP assigned the classless block 128.64.0.0/24.\n(i) Find the total number and range of addresses allotted to the organization. [2]\n(ii) Find the range of addresses for each business unit with its subnet prefix/mask. [6]\n(iii) Analyze the unallocated addresses left after allocation. [2]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.114
+   },
+   {
+    "number": 11,
+    "parts": [
+     {
+      "label": "",
+      "text": "Interpret Fig. 2 comprising several networks interconnected by routers with RIP enabled. What is the initial routing table of R1 and, after RIP is enabled, compute the routing table of Router R1 and illustrate the process carried out by RIP.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.487
+   },
+   {
+    "number": 12,
+    "parts": [
+     {
+      "label": "",
+      "text": "Explain with necessary diagrams how TCP uses congestion control to alleviate congestion in the network. Also interpret the Fig. 3 graph of congestion window size as a function of transmission round.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.845
+   },
+   {
+    "number": 13,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Illustrate the HTTP transaction between client and server for the following cases: i. the client wants to retrieve a document from the server (use the appropriate method); ii. the client wants to send data to the server (use the appropriate method).",
+      "co": "",
+      "bl": "",
+      "marks": "6",
+      "modules": [
+       "m7"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Which transport layer service does HTTP use? Differentiate the various connection modes of operation used by HTTP.",
+      "co": "",
+      "bl": "",
+      "marks": "4",
+      "modules": [
+       "m7"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.331
+   }
+  ]
+ },
+ {
+  "id": "D1-23-24",
+  "exam": "Final Assessment Test – July 2023",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "D1",
+  "note": "Answer ALL Questions (10 X 10 = 100 Marks)",
+  "pages": 2,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A defence organization is building the network for a newly constructed office. 3 scientists work on confidential projects and each scientist has a team of 5 engineers. Sketch a suitable topology with justification.",
+      "co": "",
+      "bl": "",
+      "marks": "6",
+      "modules": [
+       "m1"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "A company is hiring freshers to work on the Application layer and Transport layer. Identify any 4 protocols with their purpose that the candidate must be familiar with.",
+      "co": "",
+      "bl": "",
+      "marks": "4",
+      "modules": [
+       "m1"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.225
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "a",
+      "text": "5 equal-sized datagrams of the same message travel to the destination one after another through different paths (table of paths: path lengths 3200 km, 11,700 km, 12,200 km, 10,200 km, 10,700 km, through switches 1,3,5 / 1,2,5 / 1,2,3,5 / 1,4,5 / 1,4,3,5). The delay for each switch (including waiting and processing) is 5, 10, 15, 10 and 20 ms respectively; propagation speed is 2 x 10^8 m/s. Compute the order in which the datagrams arrive and the delay for each. Ignore other delays.",
+      "co": "",
+      "bl": "",
+      "marks": "6",
+      "modules": [
+       "m2"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Discuss the various phases in circuit switching.",
+      "co": "",
+      "bl": "",
+      "marks": "4",
+      "modules": [
+       "m2"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.378
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "A software developer must write code to send 8 frames (assume every 4th frame is lost). He can choose Stop & Wait, Go-Back-3 or Selective Repeat. Justify your answer with the timing diagram.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.757
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A sensor node transmits 7-bit temperature data to a base station using Hamming code with even parity. The data received is 01010111101. Identify any error and mention the steps to correct it.",
+      "co": "",
+      "bl": "",
+      "marks": "6",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "A girl in an uncomfortable situation on a bus immediately alerts her parents using the safety device attached to her mobile phone. Identify the type of connectivity/standard employed in the device with its features.",
+      "co": "",
+      "bl": "",
+      "marks": "4",
+      "modules": [
+       "m3"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.851
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "a",
+      "text": "The data captured from Wireshark is 0X4500004da548000080110000c0a82b7fc0a82b01. Show the IPv4 header format with the values given.",
+      "co": "",
+      "bl": "",
+      "marks": "3",
+      "modules": [
+       "m4"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Analyse if the data is fragmented or corrupted, with justification.",
+      "co": "",
+      "bl": "",
+      "marks": "2",
+      "modules": [
+       "m4"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.151
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "",
+      "text": "A network uses the 172.12.0.0 class B address. There is a requirement to support 459 hosts per subnet while accommodating the maximum number of subnets. Construct the subnet mask and the IP layout for 4 valid subnets with details of the first address, range of addresses and the broadcast address.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.25
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "",
+      "text": "Evaluate the shortest path of all the links to A using Dijkstra's algorithm (weighted graph given in the paper).",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.355
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "",
+      "text": "Client A sends a request to abd.org to get the IP address of vit.edu. Analyse both the resolution techniques to locate the IP address, along with diagrams.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m7"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.641
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "",
+      "text": "Differentiate closed loop and open loop congestion control by quoting 2 mechanisms from each method.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.715
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "",
+      "text": "With the rise of IoT devices connecting to the Internet, the possibility of data being attacked also increases. Recommend any 5 cloud computing security measures.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m7"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.771
+   }
+  ]
+ },
+ {
+  "id": "D1-24-25",
+  "exam": "Final Assessment Test – November 2024",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "D1+TD1",
+  "note": "Answer ALL Questions (10 X 10 = 100 Marks)",
+  "pages": 3,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "a",
+      "text": "In a university campus three departments each set up a computer lab. Suggest the topology and justify it in terms of cost-effectiveness, reliability and accessibility, and discuss its challenges. Department 1: 50 computers, each connected to two others forming a closed loop, data travels in one direction. Department 2: a narrow room, a single central cable along the lab with each workstation connected by a short cable. Department 3: a research lab with high-end computers and a printer; if one device or cable fails the rest must remain unaffected; cost is not a primary concern.",
+      "co": "",
+      "bl": "",
+      "marks": "8",
+      "modules": [
+       "m1"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Discuss the need for protocols and standards.",
+      "co": "",
+      "bl": "",
+      "marks": "2",
+      "modules": [
+       "m1"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.252
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A 200 MB message stored on a flash device is to be e-mailed from one server to another, passing three nodes of a connectionless network. Packets are 10 KB excluding a 40-byte header. Nodes are 400 miles apart, servers are 50 miles from their corresponding nodes, all links are 100 Mb/s, and processing time at each node is 0.2 s.\ni. Find the propagation delays per packet between a server and a node and between nodes. [3]\nii. Find the total time required to send this message. [3]",
+      "co": "",
+      "bl": "",
+      "marks": "6",
+      "modules": [
+       "m2"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Compare and contrast circuit switching and packet switching.",
+      "co": "",
+      "bl": "",
+      "marks": "4",
+      "modules": [
+       "m2"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.649
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "Distinguish between CSMA/CD and CSMA/CA. With a flowchart, elucidate the working of CSMA/CA and Pure ALOHA.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.06
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "",
+      "text": "A midsized organization is granted 190.168.0.0/16. Design a subnetting scheme that supports 8 subnets, each capable of supporting up to 400 hosts.\na) What is the subnet mask? [3]\nb) What is the range of valid host addresses, network address and broadcast address in each subnet? [4]\nc) What is the total number of usable IP addresses in this scheme? [3]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.125
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Illustrate the differences between IPv4 and IPv6 protocol headers.",
+      "co": "",
+      "bl": "",
+      "marks": "6",
+      "modules": [
+       "m4"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "What is NAT? What are the situations where Network Address Translation is required?",
+      "co": "",
+      "bl": "",
+      "marks": "4",
+      "modules": [
+       "m4"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.281
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "a",
+      "text": "For the network diagram provided, demonstrate the process of the Distance Vector Routing algorithm to determine the minimum cost paths from Node F to all other nodes. Explicitly list all shortest path routes from F and illustrate each step using diagrams.",
+      "co": "",
+      "bl": "",
+      "marks": "7",
+      "modules": [
+       "m5"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "How is the count-to-infinity problem solved in Distance Vector Routing? What are the limitations?",
+      "co": "",
+      "bl": "",
+      "marks": "3",
+      "modules": [
+       "m5"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.367
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "",
+      "text": "Explain the congestion control techniques used to improve QoS of the computer network.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.715
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "a",
+      "text": "List the types of DNS messages. With a neat frame format enumerate DNS messages with their header.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m7"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Name the categories of HTTP header. Write short notes on each header with its description.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m7"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.8
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Suppose we want to transmit the message 1011 0010 0100 1011 and protect it from errors using the CRC polynomial x^8 + x^2 + x^1 + 1.\ni. Use polynomial long division to determine the message that should be transmitted. [5]\nii. Suppose the leftmost bit of the message is inverted due to noise. What is the result of the receiver's CRC calculation? How does the receiver know an error has occurred? [5]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Two hosts are in a CSMA/CD network; the medium has a data transfer capacity of 1 Gbps, minimum frame length 1,000 bits and propagation speed 2 x 10^8 m/s.\ni) What will be the distance between the hosts? [4]\nii) If it is an Ethernet network, what is the efficiency when the hosts are at maximum distance? If the distance is reduced to 1 m, does it impact the efficiency? [6]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.029
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A router has 3 links with different MTUs (Link 1, Link 2, Link 3, per the table in the paper).\ni) The router receives a 600-byte IPv4 packet from link 3 and must send it to link 2. What will happen? Which header fields need to be updated? [3]\nii) If the 600-byte packet has a 20-byte header, at least how many packets must be sent over link 2? Write the total length, flag and fragmentation offset of each outgoing packet. [4]\niii) The router receives 20 fragmented packets from link 1 and must send them to link 3. How many packets will be sent over link 3? [3]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Use the link state routing algorithm to find the shortest path from node E to all other nodes and show the forwarding table at node E. Analyse the challenges in link state routing.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.345
+   }
+  ]
+ },
+ {
+  "id": "D2-24-25",
+  "exam": "Final Assessment Test – November 2024",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "D2+TD2",
+  "note": "Answer ALL Questions (10 X 10 = 100 Marks)",
+  "pages": 4,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "",
+      "text": "A company is designing the network for a new four-floor office building connecting finance, HR and engineering on different floors. It needs high-speed internet, secure communication and large internal data transfers. Requirements: (a) each department has a dedicated segment to reduce congestion; (b) scalable for future expansion; (c) security with isolation of departments; (d) wireless coverage in common areas like the lobby and cafeteria.\ni) What network topology would you recommend? Justify.\nii) Explain how VLANs help with security and traffic management.\niii) How would you implement a wireless network with sufficient coverage and security in common areas?\niv) Suggest methods to future-proof the network for scalability.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m1"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.259
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "",
+      "text": "i) A circuit-switched network has a setup time of 2 seconds. If the data transmission rate is 64 kbps and a user needs to send a 1 MB file, calculate the total time required to send the file. [5]\nii) In a circuit-switched network the propagation delay between two nodes is 15 ms (and a setup delay is given). If the transmission rate is 10 Mbps and the user needs to send 5 MB of data, calculate the total time required for the communication. [5]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.636
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Consider a 16-bit checksum used for error detection. A sender transmits three 16-bit data words: Data 1: 10011001 11001101, Data 2: 10101010 11110000, Data 3: 11010111 00101101. Calculate the checksum the sender will append.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "A sender wants to transmit the message 110101 using a CRC with generator polynomial G(x) = x^3 + x + 1 (binary 1011). Find the transmitted codeword.",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m3"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.04
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "",
+      "text": "In a Class B network with IP address 172.16.0.0 and the default subnet mask, calculate the maximum number of hosts that can be accommodated.\ni. Calculate the number of subnets and hosts in a /20 subnet.\nii. Determine the valid host range for the subnet 172.16.0.0/22.\niii. What is the next subnet for 172.16.0.0/24?\niv. How many total addresses are in a /19 subnet?",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.251
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "",
+      "text": "Describe the key fields in the IPv4 header and discuss the purpose of each. List the main fields of the IPv6 header.",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.77
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A small company has 6 servers S1-S6 connected by cables with data transfer times (S1-S2 7 ms, S1-S3 9, S1-S6 14, S2-S3 10, S2-S4 15, S3-S4 11, S3-S6 2, S4-S5 6, S5-S6 9). i) Using Dijkstra's algorithm determine the shortest path from S1 to all other servers. ii) For each destination list the path taken and total transfer time. iii) Describe how the algorithm works step by step: how it selects the next node and how it updates the shortest known path to each node.",
+      "co": "",
+      "bl": "",
+      "marks": "7",
+      "modules": [
+       "m5"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "A company with offices on different continents used a Distance Vector protocol (RIP) but suffered slow convergence and routing loops and is considering switching to Link State (OSPF). Explain how routing loops occur in Distance Vector protocols and describe two techniques (e.g. split horizon, hold-down timers) used to prevent them.",
+      "co": "",
+      "bl": "",
+      "marks": "3",
+      "modules": [
+       "m5"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.417
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i) Elucidate the role of Queuing Mechanisms in Congestion Control. [5]",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m6"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii) Deliberate some common Congestion Avoidance Mechanisms used in TCP. [5]",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m6"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.285
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "",
+      "text": "NetCom Corp manages web, file and email servers and network devices using FTP, HTTP, SMTP and SNMP.\ni) Clients report slow or failing large-file uploads. a. Explain how FTP works and identify two potential causes of the slow transfers or failures. b. What can the IT team do to improve FTP reliability and speed? [5]",
+      "co": "",
+      "bl": "",
+      "marks": "5",
+      "modules": [
+       "m7"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii) The web server hosting a critical application has high traffic and slow page loads. a. Explain the functions of HTTP in web browsing. b. What techniques can be implemented to optimize HTTP performance and reduce the impact of high traffic? [2.5]",
+      "co": "",
+      "bl": "",
+      "marks": "2.5",
+      "modules": [
+       "m7"
+      ],
+      "and": true
+     },
+     {
+      "label": "iii",
+      "text": "iii) Clients complain of email delays and failures. a. Describe how SMTP handles mail delivery and what could cause delays or failures. b. Suggest two strategies to troubleshoot and resolve email delivery issues. [2.5]",
+      "co": "",
+      "bl": "",
+      "marks": "2.5",
+      "modules": [
+       "m7"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.333
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "a",
+      "text": "i) A slotted ALOHA channel has a transmission capacity of 1 Mbps and an average packet size given in the paper. Calculate the maximum throughput of the system. [5]\nii) In a slotted ALOHA network, 10 users attempt to send packets, each generating 0.5 packets per second. Calculate the probability of a packet collision when one user attempts to send a packet. [5]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "i) In a LAN using CSMA, Device A senses the channel idle and begins transmitting; just after, Device B also senses it idle and starts transmitting. Explain what happens next and how CSMA helps manage this situation. [5]\nii) A network engineer must choose between CSMA and CSMA/CD for a new LAN. Discuss the advantages of CSMA/CD over CSMA in terms of efficiency and collision management. [5]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 4,
+    "y": 0.03
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "a",
+      "text": "An IP datagram has arrived with partial header information 4500005400030000 2066...\ni) What is the header size? ii) Are there any options in the packet? iii) What is the size of the data? iv) Is the packet fragmented? v) How many more routers can the packet travel through?",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "In a link-state network, routers A-E are connected as: A to B and C; B to A, C and D; C to A, B and E; D to B; E to C.\ni) A new link B-E with cost 4 is established. Explain the process of LSA flooding and how routers update their link-state databases and recalculate shortest paths. [5]\nii) After the new link is established, calculate the new shortest path from Router D to Router E. [5]",
+      "co": "",
+      "bl": "",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 4,
+    "y": 0.444
+   }
+  ]
+ },
+ {
+  "id": "F1-25-26",
+  "exam": "Final Assessment Test – November 2025",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "F1+TF1",
+  "note": "Answer ALL Questions (10 X 10 = 100 Marks)",
+  "pages": 4,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "",
+      "text": "A manufacturing company is building a new production wing (about 2,000 sq m) with real-time machinery monitoring, sensors, video surveillance and office operations. Requirements: high reliability and redundancy (24/7), QoS (real-time OT data prioritized), security segmentation (OT isolated from IT), rugged infrastructure, and future IIoT integration.\ni. What network architecture/topology would you recommend? Justify, especially for high reliability. [2.5]\nii. Suggest methods to future-proof the network for scalability. [2.5]\niii. What physical media (cabling) and networking hardware standards would you select? [2.5]",
+      "co": "CO1",
+      "bl": "BL2",
+      "marks": "7.5",
+      "modules": [
+       "m1"
+      ]
+     },
+     {
+      "label": "iv",
+      "text": "iv. Suggest one primary and one secondary method to ensure QoS for critical real-time OT traffic. [2.5]",
+      "co": "CO1",
+      "bl": "BL2",
+      "marks": "2.5",
+      "modules": [
+       "m6"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.47
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Discuss the importance of using a layered approach in designing network protocols. Explain how the OSI model facilitates communication between networked systems, and describe the key responsibilities of each layer.",
+      "co": "CO2",
+      "bl": "BL1",
+      "marks": "7",
+      "modules": [
+       "m1"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "A network engineer disables transport layer error checking assuming the data link layer ensures reliable transmission. What potential issues might arise, and why?",
+      "co": "CO2",
+      "bl": "BL1",
+      "marks": "3",
+      "modules": [
+       "m1"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 2,
+    "y": 0.27
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "A user downloads a 50 MB file over a packet-switched network. Link bandwidth 5 Mbps, end-to-end propagation delay 80 ms, header 20 bytes per packet, packet payload 1,480 bytes.\ni. Calculate the total number of packets needed for the 50 MB file (payload only). [2.5]\nii. Calculate the total transmission time for the entire file (ignore header overhead). [2.5]\niii. Calculate the total delay for the first packet to reach the destination (negligible switch processing). [2.5]\niv. Explain why the total time to send the entire file is closer to the transmission time plus the propagation delay of the first packet, rather than the sum over all packets. [2.5]",
+      "co": "CO2",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.43
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "",
+      "text": "An organisation is granted the block 125.238.0.0/16. The administrator wants to create 512 subnets:\ni. Find the subnet mask required.\nii. Find the number of addresses in each subnet.\niii. Find the first and last allocatable addresses in subnet 1.\niv. Find the first and last allocatable address in subnet 14.",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.04
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. A 2400-byte datagram is sent into a link with an MTU of 700 bytes; the original datagram has identification number 422. How many fragments are generated? What are the values of the fragmentation-related fields in the generated datagram(s)? [5]",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "5",
+      "modules": [
+       "m4"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. Check whether these IPv6 address notations are correct: a) ::0F53:6382:AB00:67DB:BB27:7332  b) 7803:42F2::88EC:D4BA:B75D:11CD [2]",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "2",
+      "modules": [
+       "m4"
+      ],
+      "and": true
+     },
+     {
+      "label": "iii",
+      "text": "iii. Draw the complete structure of the IPv4 header with all fields labeled and their lengths in bits. [3]",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "3",
+      "modules": [
+       "m4"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.17
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. Why is voice and video traffic often sent over TCP rather than UDP in today's Internet? [3]",
+      "co": "CO5",
+      "bl": "BL2",
+      "marks": "3",
+      "modules": [
+       "m6"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. Explain how TCP uses a congestion window and a congestion policy that avoid congestion and detect congestion after it has occurred. [7]",
+      "co": "CO5",
+      "bl": "BL2",
+      "marks": "7",
+      "modules": [
+       "m6"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.4
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. A TCP header dump in hexadecimal: 05320017 00000001 00000000 500207FF 00000000. What is a) the source port number, b) the sequence number, c) the acknowledgment number, d) the length of the header, e) the type of the segment, f) the window size? [6]",
+      "co": "CO5",
+      "bl": "BL2",
+      "marks": "6",
+      "modules": [
+       "m6"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. What is traffic shaping? Discuss any one method used for traffic shaping. [4]",
+      "co": "CO5",
+      "bl": "BL2",
+      "marks": "4",
+      "modules": [
+       "m6"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.47
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. Describe the functions of the two FTP connections. What kinds of file types can FTP transfer? What are the three FTP transmission modes? [6]",
+      "co": "CO5",
+      "bl": "BL1",
+      "marks": "6",
+      "modules": [
+       "m7"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. Explain different sections of the Domain Name Space (tree) with a neat diagram. [4]",
+      "co": "CO5",
+      "bl": "BL1",
+      "marks": "4",
+      "modules": [
+       "m7"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.62
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "a",
+      "text": "i. The distance from earth to a distant planet is about 9 x 10^10 m. What is the channel utilization if stop-and-wait is used on a 64 Mbps point-to-point link? Frame size is 32 KB and speed of light is 3 x 10^8 m/s. [6]",
+      "co": "CO3",
+      "bl": "BL3",
+      "marks": "6",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "a (ii)",
+      "text": "ii. A group of N stations share a 56-kbps pure ALOHA channel. Each station outputs a 1000-bit frame on average once every 100 sec, even if the previous one has not yet been sent. What is the maximum value of N? [4]",
+      "co": "CO3",
+      "bl": "BL3",
+      "marks": "4",
+      "modules": [
+       "m3"
+      ],
+      "and": true
+     },
+     {
+      "label": "b",
+      "text": "Suppose you want to transmit the message 1011 0010 0100 1011 and protect it from errors using the CRC8 polynomial x^8 + x^2 + x^1 + 1.\ni. Use polynomial long division to determine the message that should be transmitted. [5]\nii. Suppose the leftmost bit of the message is inverted due to noise. What is the result of the receiver's CRC calculation? How does the receiver know an error has occurred? [5]",
+      "co": "CO3",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.75
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "a",
+      "text": "i. An autonomous system has 6 routers (A-F) connected by links with time costs (A-C 2, C-F 18, A-D 10, C-D 1, D-F 6, B-D 2, D-E 11, E-F 2, B-E 1). The distance vector algorithm is used. 1. Write the initial distance table of Router C. [2] 2. Find the shortest path from node C to all others. [4]\nii. In distance vector, what problem is encountered in deciding whether a host has become unreachable? In what circumstances is it impossible to resolve this problem? [4]",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "In a network the weights are given by link-state packets and contain information such as the routers and traffic costs. Find the shortest path from node F to all others (directed graph given in the paper).",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 4,
+    "y": 0.21
+   }
+  ]
+ },
+ {
+  "id": "F2-25-26",
+  "exam": "Final Assessment Test – November 2025",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "F2+TF2",
+  "note": "Answer ALL Questions (10 X 10 = 100 Marks)",
+  "pages": 4,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "a",
+      "text": "You are setting up an online chat application where client and server communicate via the OSI layers, with one router and one switch between them. Explain the working of the OSI model in proper order with the protocols involved in each layer.",
+      "co": "",
+      "bl": "BL2",
+      "marks": "7",
+      "modules": [
+       "m1"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Draw the OSI architecture diagram from client to server including the switch and router.",
+      "co": "",
+      "bl": "BL2",
+      "marks": "3",
+      "modules": [
+       "m1"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 1,
+    "y": 0.436
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "",
+      "text": "A path in a digital circuit-switched network has a data rate of 2 Mbps. The setup and teardown phases need 1500 bits. The distance between two parties is 4000 km and propagation speed is 2 x 10^8 m/s.\ni. What is the total delay if 2000 bits of data are exchanged in the data transfer phase?\nii. What is the total delay if 500,000 bits are exchanged?\niii. What is the total delay if 5,000,000 bits are exchanged?\niv. Give a brief conclusion on the efficiency of data transfer based on the above.",
+      "co": "",
+      "bl": "BL2",
+      "marks": "10",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.626
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "Host A is connected to R1, R1 to R2, R2 to Host B (point-to-point). MTU: Host A to R1 3500, R1 to R2 2500, Host B to R2 1500. Host A sends a datagram of 8400 bytes to Host B.\ni. How many fragments will be produced by R1 and R2? [1]\nii. Which fragmentation fields are updated at R1 and R2? [2]\niii. Show the IPv4 header format for each fragment with the modified values. [4]\niv. How many fragments are received by Host B? Show detailed calculation. [3]",
+      "co": "",
+      "bl": "BL2",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.032
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "",
+      "text": "An ISP is granted the site address 180.0.0.0/16 and distributes addresses to a company with four branches: Branch 1 (Mumbai) 50 customers each needing 128 addresses; Branch 2 (Chennai) 100 customers each needing 64; Branch 3 (Bangalore) 100 customers each needing 32; Branch 4 (Delhi) 50 customers each needing 256. Find the number of addresses available after allocation.",
+      "co": "",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.312
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "",
+      "text": "A large data centre slows down due to congestion at peak traffic. Provide a detailed report on open loop and closed loop congestion methodologies and how they help prevent and mitigate congestion. Also mention which method is optimal and why.",
+      "co": "",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.577
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "",
+      "text": "i. A leaky bucket has capacity 100 packets and leaks at 10 packets/sec. If 50 packets arrive every second for 5 seconds, how many packets are dropped? [2.5]\nii. Design a leaky bucket for a router that receives bursts of 200 packets every 10 seconds, smoothing traffic to 20 packets/sec. What bucket size avoids drops? [2.5]\niii. A video server uses a leaky bucket to send at a constant 5 Mbps while the input fluctuates between 2 and 10 Mbps. What happens when the input exceeds the leak rate? [2.5]\niv. A token bucket adds 1 token every 100 ms and holds up to 50 tokens. How many requests can be sent in a burst if each consumes 1 token? [2.5]",
+      "co": "",
+      "bl": "BL5",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.7
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "i",
+      "text": "i. Millions of users try to access www.vit.ac.in at the same time during admission counselling. Demonstrate with a neat diagram how DNS caching improves web performance and reduces server load. [5]",
+      "co": "",
+      "bl": "BL3",
+      "marks": "5",
+      "modules": [
+       "m7"
+      ]
+     },
+     {
+      "label": "ii",
+      "text": "ii. Alice sends an email to Bob using her mail client. Illustrate with a neat diagram how the message is transmitted using SMTP over TCP from Alice's computer to Bob's mailbox. [5]",
+      "co": "",
+      "bl": "BL3",
+      "marks": "5",
+      "modules": [
+       "m7"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 3,
+    "y": 0.027
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "",
+      "text": "A university's IT department uses SNMP for real-time monitoring. The NMS receives multiple TRAP alerts from routers showing high packet loss and CPU utilization.\ni. Identify and explain the role of each functional component of SNMP in this scenario. [5]\nii. Demonstrate the various SNMPv3 messages exchanged between them by showing the format of each. [5]",
+      "co": "",
+      "bl": "BL5",
+      "marks": "10",
+      "modules": [
+       "m7"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.182
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "a",
+      "text": "Find the shortest path from source node A to all other nodes using Dijkstra's algorithm for the autonomous network diagram shown in the paper.",
+      "co": "CO4",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "Distance vector routing is implemented where each router shares its routing table with neighbours periodically; topology changes and link failures require efficient updates. Node A is the source.\ni. Explain the working of distance vector routing. [3]\nii. Using the Bellman-Ford algorithm compute the shortest path from A to all other nodes, showing all steps and distance updates in each iteration. [5]\niii. Discuss how node and link failures are detected and addressed in distance vector routing. [2]",
+      "co": "CO4",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.452
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A chat application uses Hamming code for error correction on 8-bit messages with even parity. The message 10101011 is prepared for transmission; at the receiver the 6th bit is corrupted.\ni. Determine the data to be transferred after applying Hamming code with even parity (show all steps). [5]\nii. If the 6th bit is received incorrectly, demonstrate how Hamming code detects and corrects the error. [5]",
+      "co": "CO3",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "i. A remote sensor station uses Selective Repeat ARQ with a 4-bit sequence number. The sensor sends Frames 0, 1, 2, 3 and 4; Frame 1 is lost, the acknowledgement of Frame 2 is lost, and the acknowledgement of Frame 3 times out. Discuss the Selective Repeat ARQ protocol and draw the timing diagram including lost frames, retransmissions and delays. [6]",
+      "co": "CO3",
+      "bl": "BL4",
+      "marks": "6",
+      "modules": [
+       "m3"
+      ]
+     },
+     {
+      "label": "b (ii)",
+      "text": "ii. Which CSMA is suitable for Ethernet? Why? Justify with valid key points. [4]",
+      "co": "CO3",
+      "bl": "BL4",
+      "marks": "4",
+      "modules": [
+       "m3"
+      ],
+      "and": true
+     }
+    ],
+    "pg": 4,
+    "y": 0.2
+   }
+  ]
+ },
+ {
+  "id": "G2-25-26",
+  "exam": "Final Assessment Test – April 2026",
+  "course": "BCSE308L - Computer Networks",
+  "slot": "G2+TG2",
+  "note": "Answer ALL Questions (10 X 10 = 100 Marks)",
+  "pages": 3,
+  "questions": [
+   {
+    "number": 1,
+    "parts": [
+     {
+      "label": "",
+      "text": "A new high-speed multimedia application bypasses the transport layer and directly communicates with the network layer for latency reduction. Analyze the architectural consequences of this design. Under what conditions could such a violation actually improve performance?",
+      "co": "CO1",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m1"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.349
+   },
+   {
+    "number": 2,
+    "parts": [
+     {
+      "label": "",
+      "text": "A remote surgery system requires 99.999% reliability and under 5 ms latency. Evaluate whether packet switching or circuit switching is more appropriate. Justify with quantitative arguments.",
+      "co": "CO2",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m2"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.459
+   },
+   {
+    "number": 3,
+    "parts": [
+     {
+      "label": "",
+      "text": "Two satellite ground stations communicate with a satellite using ALOHA. Station A uses pure ALOHA and Station B uses slotted ALOHA. The channel data rate is 1 Mbps and both stations have the same average packet generation rate.\na) Analyze the performance of pure and slotted ALOHA in terms of throughput and efficiency in this scenario.\nb) Discuss the factors that influence the performance difference between pure and slotted ALOHA.\nc) Propose a strategy to optimize the performance of both stations considering the satellite channel and the ALOHA protocol.",
+      "co": "CO3",
+      "bl": "BL2",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.548
+   },
+   {
+    "number": 4,
+    "parts": [
+     {
+      "label": "",
+      "text": "The bit stream 1101011011 is transmitted using the standard CRC method with generator polynomial 10011. Show the generation of the code word and the actual bit stream transmitted if the third bit from the left is inverted during transmission. How would this error be detected at the receiver's end?",
+      "co": "CO3",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m3"
+      ]
+     }
+    ],
+    "pg": 1,
+    "y": 0.78
+   },
+   {
+    "number": 5,
+    "parts": [
+     {
+      "label": "",
+      "text": "An ISP is granted a block of addresses starting with 150.80.0.0/16 and wants to distribute them to 2600 customers: a) the first group has 200 medium-size businesses, each needing about 128 addresses; b) the second group has 400 small businesses, each needing about 16 addresses; c) the third group has 2000 households, each needing 4 addresses. Design the subblocks and give the slash notation for each subblock. Find how many addresses are still available after these allocations.",
+      "co": "CO4",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.03
+   },
+   {
+    "number": 6,
+    "parts": [
+     {
+      "label": "",
+      "text": "An IP datagram of 4000 bytes (including header) must pass through a network with MTU = 1500 bytes. Calculate the number of fragments created. Determine the fragment offsets, fragment sizes and More Fragment (MF) flags. Explain the entire fragmentation process.",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m4"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.211
+   },
+   {
+    "number": 7,
+    "parts": [
+     {
+      "label": "",
+      "text": "Calculate the LSP for nodes A, B and E, and give the steps to be followed in Link State Routing. Apply Dijkstra's algorithm to the given graph (A-B 12, A-C 7, A-D 10, B-C 3, B-E 4, C-E 9) to form the shortest path tree and construct the routing table for Node A, the root node.",
+      "co": "CO4",
+      "bl": "BL3",
+      "marks": "10",
+      "modules": [
+       "m5"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.334
+   },
+   {
+    "number": 8,
+    "parts": [
+     {
+      "label": "",
+      "text": "A network engineer claims that TCP congestion control and TCP flow control solve the same problem. Critically evaluate this statement. Using a real-world scenario of a high-bandwidth server communicating with a slow client over a congested network, explain how both mechanisms operate simultaneously. What would happen if one of them were removed?",
+      "co": "CO5",
+      "bl": "BL2",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.61
+   },
+   {
+    "number": 9,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A network administrator must manage traffic for three services: Video streaming, Email transfer and Financial transactions. Design a traffic management strategy ensuring fair bandwidth allocation while prioritizing critical services. Explain which queuing mechanism would be most suitable and justify your reasoning.",
+      "co": "CO5",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "A telecommunications provider promises low delay, high throughput, minimal packet loss and low jitter. Explain why achieving all these parameters simultaneously is difficult in real networks. Analyse the trade-offs and suggest how networks prioritize QoS parameters depending on application type.",
+      "co": "CO5",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m6"
+      ]
+     }
+    ],
+    "pg": 2,
+    "y": 0.755
+   },
+   {
+    "number": 10,
+    "parts": [
+     {
+      "label": "a",
+      "text": "A user accesses a website and downloads a file while simultaneously sending an email. Trace the interaction of the following protocols: DNS, HTTP, SMTP, TCP, IP. Explain how these protocols cooperate across layers.",
+      "co": "CO5",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m7"
+      ]
+     },
+     {
+      "label": "b",
+      "text": "You are designing a new application layer protocol for IoT devices. Explain what features it must include to support low bandwidth, high scalability, security and low latency. Compare your design with existing protocols like HTTP or MQTT.",
+      "co": "CO5",
+      "bl": "BL4",
+      "marks": "10",
+      "modules": [
+       "m7"
+      ]
+     }
+    ],
+    "pg": 3,
+    "y": 0.147
+   }
+  ]
+ }
+]

@@ -1,0 +1,228 @@
+[
+ {
+  "id": "m1",
+  "title": "Networking Principles and Layered Architecture",
+  "priority1": [
+   {
+    "topic": "Network Topologies & Network Design",
+    "importance": "Very High (6+) · Theory",
+    "priority": "Very High",
+    "link": "Network Topologies & Network Design"
+   },
+   {
+    "topic": "OSI Model & Layered Architecture",
+    "importance": "Very High (5+) · Theory",
+    "priority": "Very High",
+    "link": "OSI Model & Layered Architecture"
+   }
+  ],
+  "priority2": [
+   {
+    "topic": "Protocols, Standards & TCP/IP",
+    "importance": "Medium (2–2) · Theory",
+    "priority": "Medium",
+    "link": "Protocols, Standards & TCP/IP"
+   }
+  ],
+  "marks": 10
+ },
+ {
+  "id": "m2",
+  "title": "Circuit and Packet Switching",
+  "priority1": [
+   {
+    "topic": "Delay, Latency & Data Rate Calculations",
+    "importance": "Very High (7+) · Numerical",
+    "priority": "Very High",
+    "link": "Delay, Latency & Data Rate Calculations"
+   },
+   {
+    "topic": "Circuit vs Packet Switching",
+    "importance": "Very High (5+) · Theory",
+    "priority": "Very High",
+    "link": "Circuit vs Packet Switching"
+   }
+  ],
+  "priority2": [],
+  "marks": 20
+ },
+ {
+  "id": "m3",
+  "title": "Data Link Layer",
+  "priority1": [
+   {
+    "topic": "Multiple Access: ALOHA, CSMA, CSMA/CD & CSMA/CA",
+    "importance": "Very High (7+) · Theory + Numerical",
+    "priority": "Very High",
+    "link": "Multiple Access: ALOHA, CSMA, CSMA/CD & CSMA/CA"
+   },
+   {
+    "topic": "Error Detection: Parity, Checksum & CRC",
+    "importance": "Very High (5+) · Numerical",
+    "priority": "Very High",
+    "link": "Error Detection: Parity, Checksum & CRC"
+   },
+   {
+    "topic": "Flow Control: Stop-and-Wait, Go-Back-N & Selective Repeat",
+    "importance": "Very High (5+) · Numerical",
+    "priority": "Very High",
+    "link": "Flow Control: Stop-and-Wait, Go-Back-N & Selective Repeat"
+   }
+  ],
+  "priority2": [
+   {
+    "topic": "Hamming Code",
+    "importance": "Medium (2–2) · Numerical",
+    "priority": "Medium",
+    "link": "Hamming Code"
+   },
+   {
+    "topic": "IEEE 802.3, 802.11, Bluetooth & RFID",
+    "importance": "Medium (2–2) · Theory",
+    "priority": "Medium",
+    "link": "IEEE 802.3, 802.11, Bluetooth & RFID"
+   }
+  ],
+  "marks": 20
+ },
+ {
+  "id": "m4",
+  "title": "Network Layer",
+  "priority1": [
+   {
+    "topic": "Subnetting & Classless Addressing (CIDR)",
+    "importance": "Very High (8+) · Numerical",
+    "priority": "Very High",
+    "link": "Subnetting & Classless Addressing (CIDR)"
+   },
+   {
+    "topic": "IPv4 / IPv6 Addressing & Header Format",
+    "importance": "Very High (6+) · Theory",
+    "priority": "Very High",
+    "link": "IPv4 / IPv6 Addressing & Header Format"
+   },
+   {
+    "topic": "IP Fragmentation & MTU",
+    "importance": "High (4+) · Numerical",
+    "priority": "High",
+    "link": "IP Fragmentation & MTU"
+   }
+  ],
+  "priority2": [
+   {
+    "topic": "Network Address Translation (NAT)",
+    "importance": "Medium (1–1) · Theory",
+    "priority": "Medium",
+    "link": "Network Address Translation (NAT)"
+   }
+  ],
+  "marks": 20
+ },
+ {
+  "id": "m5",
+  "title": "Routing Protocols",
+  "priority1": [
+   {
+    "topic": "Link State Routing & Dijkstra",
+    "importance": "Very High (7+) · Numerical",
+    "priority": "Very High",
+    "link": "Link State Routing & Dijkstra"
+   },
+   {
+    "topic": "Distance Vector Routing (RIP, Bellman-Ford)",
+    "importance": "Very High (5+) · Numerical",
+    "priority": "Very High",
+    "link": "Distance Vector Routing (RIP, Bellman-Ford)"
+   }
+  ],
+  "priority2": [],
+  "marks": 10
+ },
+ {
+  "id": "m6",
+  "title": "Transport Layer",
+  "priority1": [
+   {
+    "topic": "TCP Congestion Control & Avoidance",
+    "importance": "Very High (5+) · Theory",
+    "priority": "Very High",
+    "link": "TCP Congestion Control & Avoidance"
+   },
+   {
+    "topic": "Open Loop & Closed Loop Congestion Control",
+    "importance": "High (4+) · Theory",
+    "priority": "High",
+    "link": "Open Loop & Closed Loop Congestion Control"
+   },
+   {
+    "topic": "Queuing Mechanisms & QoS Parameters",
+    "importance": "High (3+) · Theory",
+    "priority": "High",
+    "link": "Queuing Mechanisms & QoS Parameters"
+   }
+  ],
+  "priority2": [
+   {
+    "topic": "Leaky Bucket, Token Bucket & Traffic Shaping",
+    "importance": "Medium (2–2) · Numerical",
+    "priority": "Medium",
+    "link": "Leaky Bucket, Token Bucket & Traffic Shaping"
+   },
+   {
+    "topic": "TCP Segments, Header, Flow Control & TCP vs UDP",
+    "importance": "Medium (2–2) · Theory + Numerical",
+    "priority": "Medium",
+    "link": "TCP Segments, Header, Flow Control & TCP vs UDP"
+   }
+  ],
+  "marks": 10,
+  "choice": true,
+  "note": "RED and DEC (M6) are not there for FAT."
+ },
+ {
+  "id": "m7",
+  "title": "Application Layer",
+  "priority1": [
+   {
+    "topic": "Domain Name System (DNS)",
+    "importance": "Very High (6+) · Theory",
+    "priority": "Very High",
+    "link": "Domain Name System (DNS)"
+   },
+   {
+    "topic": "HTTP",
+    "importance": "High (3+) · Theory",
+    "priority": "High",
+    "link": "HTTP"
+   }
+  ],
+  "priority2": [
+   {
+    "topic": "FTP",
+    "importance": "Medium (2–2) · Theory",
+    "priority": "Medium",
+    "link": "FTP"
+   },
+   {
+    "topic": "SMTP & Email",
+    "importance": "Medium (2–2) · Theory",
+    "priority": "Medium",
+    "link": "SMTP & Email"
+   },
+   {
+    "topic": "Application Layer Protocols, IoT & Security",
+    "importance": "Medium (2–2) · Theory",
+    "priority": "Medium",
+    "link": "Application Layer Protocols, IoT & Security"
+   },
+   {
+    "topic": "SNMP",
+    "importance": "Medium (1–1) · Theory",
+    "priority": "Medium",
+    "link": "SNMP"
+   }
+  ],
+  "marks": 10,
+  "choice": true
+ }
+]
