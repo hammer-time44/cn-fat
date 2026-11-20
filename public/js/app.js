@@ -30,6 +30,7 @@ let MODS = [];
 let PAPERS = [];
 let TOPICS = [];
 let pendingQ = null;
+let skipHash = null;
 let curT = 0;
 let view = "cloud";
 let cur = 0;
@@ -629,13 +630,16 @@ function go(hash) {
   if (before !== view || beforeCur !== cur) sel = -1;
   if (before !== view) q.value = "";
   try {
-    if (location.hash !== "#" + hash) location.hash = hash;
+    if (location.hash !== "#" + hash) { skipHash = "#" + hash; location.hash = hash; }
   } catch (e) {}
   render();
   scrollEl.scrollTop = 0;
   if (pendingQ && view === "fat") {
-    const el = bodyEl.querySelector('.q[data-qn="' + pendingQ + '"]');
-    if (el) el.scrollIntoView({ block: "start", behavior: STILL ? "auto" : "smooth" });
+    const qn = pendingQ;
+    setTimeout(() => {
+      const el = bodyEl.querySelector('.q[data-qn="' + qn + '"]');
+      if (el) el.scrollIntoView({ block: "start", behavior: "auto" });
+    }, 120);
   }
   pendingQ = null;
 }
@@ -767,6 +771,8 @@ async function init() {
   });
   window.addEventListener("hashchange", () => {
     if (!READY) return;
+    if (skipHash === location.hash) { skipHash = null; return; }
+    skipHash = null;
     const bc = cur, bv = view;
     parse(location.hash);
     if (bc !== cur || bv !== view) sel = -1;
@@ -783,8 +789,11 @@ async function init() {
   parse(location.hash);
   render();
   if (pendingQ && view === "fat") {
-    const el = bodyEl.querySelector('.q[data-qn="' + pendingQ + '"]');
-    if (el) el.scrollIntoView({ block: "start", behavior: "auto" });
+    const qn = pendingQ;
+    setTimeout(() => {
+      const el = bodyEl.querySelector('.q[data-qn="' + qn + '"]');
+      if (el) el.scrollIntoView({ block: "start", behavior: "auto" });
+    }, 120);
   }
   pendingQ = null;
 }
