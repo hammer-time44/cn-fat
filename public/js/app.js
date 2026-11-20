@@ -343,7 +343,7 @@ function topicProblems(t) {
 function problemHtml(x) {
   const id = x.paper.id.toLowerCase();
   const lv = leafKeys(id, x.question, x.parts), allLv = leafKeys(id, x.question), bk = baseKey(id, x.question), qd = leavesDone(lv, bk);
-  let h = '<li class="q' + (qd ? " done" : "") + '" data-paper="' + id + '"><button class="qn" type="button" data-leaves="' + lv.join(",") + '" data-base="' + bk + '" data-all="' + allLv.join(",") + '" aria-pressed="' + qd + '" aria-label="Mark question ' + x.question.number + ' as solved">' + x.question.number + '</button><div class="qb"><div class="pb-h"><a class="pb-ref" href="#fat-' + x.paper.id.toLowerCase() + '-q' + x.question.number + '" target="_blank" rel="noopener" title="Open ' + esc(x.paper.id) + ' Q' + x.question.number + ' in a new tab (double-click)">' + esc(x.paper.id) + " · " + esc(x.label) + '</a>' + paperBtn(x.paper.id, x.label, x.parts[0].pg ? x.parts[0] : x.question, "pb-paper") + '<a class="mchip pb-open" href="#fat-' + id + '" data-go="fat-' + id + '" data-q="' + x.question.number + '">Open</a></div>';
+  let h = '<li class="q' + (qd ? " done" : "") + '" data-paper="' + id + '"><button class="qn" type="button" data-leaves="' + lv.join(",") + '" data-base="' + bk + '" data-all="' + allLv.join(",") + '" aria-pressed="' + qd + '" aria-label="Mark question ' + x.question.number + ' as solved">' + x.question.number + '</button><div class="qb"><div class="pb-h"><a class="pb-ref" href="#fat-' + x.paper.id.toLowerCase() + '-q' + x.question.number + '" data-go="fat-' + x.paper.id.toLowerCase() + '" data-q="' + x.question.number + '" title="Go to ' + esc(x.paper.id) + ' Q' + x.question.number + '">' + esc(x.paper.id) + " · " + esc(x.label) + '</a>' + paperBtn(x.paper.id, x.label, x.parts[0].pg ? x.parts[0] : x.question, "pb-paper") + '<a class="mchip pb-open" href="#fat-' + id + '" data-go="fat-' + id + '" data-q="' + x.question.number + '">Open</a></div>';
   x.parts.forEach((part, j) => {
     if (j > 0 && !part.and) h += '<div class="or">OR</div>';
     h += partHtml(part);
@@ -523,16 +523,7 @@ function initTabFx() {
     pillHov.style.opacity = t.getAttribute("aria-selected") === "true" ? "0" : "1";
   });
   tabsEl.addEventListener("pointerleave", () => { if (pillHov) pillHov.style.opacity = "0"; });
-  /* Topic-wise: double-click a question's paper tag (e.g. "A1-25-26 \u00b7 Q4") to open the original PDF. */
-  bodyEl.addEventListener("click", (e) => { if (e.target.closest && e.target.closest("a.pb-ref")) e.preventDefault(); });
-  bodyEl.addEventListener("dblclick", (e) => {
-    const r = e.target.closest ? e.target.closest("a.pb-ref") : null;
-    if (!r) return;
-    e.preventDefault();
-    const a = document.createElement("a"); a.href = r.getAttribute("href"); a.target = "_blank"; a.rel = "noopener";
-    document.body.appendChild(a); a.click(); a.remove();
-  });
-  tabsEl.addEventListener("dblclick", (e) => {
+    tabsEl.addEventListener("dblclick", (e) => {
     const t = e.target.closest ? e.target.closest(".tab") : null;
     if (t && view === "fat" && t.dataset.paper) { e.preventDefault(); const p = PAPERS.find((x) => x.id.toLowerCase() === t.dataset.paper); if (p) openPdf(p.id); }
   });
