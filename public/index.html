@@ -46,6 +46,8 @@
               <li><span>Previous module / topic</span><kbd>&larr;</kbd></li>
               <li><span>Next / previous topic card</span><kbd>J</kbd><kbd>K</kbd></li>
               <li><span>Show this menu</span><kbd>?</kbd></li>
+              <li><span>Text panel (open / close)</span><kbd>M</kbd></li>
+              <li><span>Marks distribution (open / close)</span><kbd>N</kbd></li>
               <li><span>Paper viewer: page / close</span><kbd>&larr;</kbd><kbd>&rarr;</kbd><kbd>Esc</kbd></li>
             </ul>
             <div class="keys-note">Back and arrow keys work when you are not typing in the search box.</div>
@@ -62,6 +64,8 @@
               <li><i class="g-chip">M1</i><span>Module &mdash; tap to open it</span></li>
               <li><i class="g-pill">tab&times;2</i><span>Double-click tab = original PDF · double-click paper tag = new tab</span></li>
               <li><i class="g-pill">topic &rarr;</i><span>Home topic opens its questions</span></li>
+              <li><i class="g-pill">M</i><span>Floating text panel &mdash; draggable, press again to close</span></li>
+              <li><i class="g-pill">N</i><span>Floating marks distribution &mdash; RED and DEC (M6) are not there for FAT</span></li>
               <li><i class="g-pill">q5</i><span>Search words or question no.</span></li>
             </ul>
             <div class="keys-note">Hover keys / features to open.</div>
@@ -105,6 +109,7 @@
   </div>
 
   <script type="module" src="js/app.js"></script>
+  <script src="js/panel.js" defer></script>
 
   <script>if ("serviceWorker" in navigator) addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });</script>
 </body>

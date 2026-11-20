@@ -144,12 +144,11 @@ function qLabel(m, sep) {
 function marksStrip(bare) {
   if (!MODS.some((x) => x.marks)) return "";
   const big = MODS.filter((x) => x.marks >= 20);
-  let h = '<div class="marks" aria-label="Marks distribution"><div class="marks-head">Marks distribution</div><div class="marks-grid">';
+  let h = '<div class="marks" aria-label="Marks distribution"><div class="marks-grid">';
   MODS.forEach((x, i) => {
     h += '<a class="mk' + (x.marks >= 20 ? " big" : "") + (!bare && i === cur ? " on" : "") + '" href="#' + x.id + '" data-go="' + x.id + '" title="' + esc(x.title + (x.questions ? " \u2013 " + qLabel(x) : "")) + '"><b>' + x.id.toUpperCase() + "</b><span>" + x.marks + (x.choice ? "<small>+ Choice</small>" : "") + "</span></a>";
   });
   h += "</div>";
-  if (big.length && !bare) h += '<p class="marks-note">Modules ' + big.map((x) => x.id.slice(1)).join(", ") + " carry 20 marks, the rest carry 10.</p>";
   return h + "</div>";
 }
 function renderCloud(term) {

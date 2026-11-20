@@ -12,7 +12,7 @@ Computer Networks: module priorities and FAT question papers.
 | **imp** | Important-notes pictures, plus the **keys** and **features** menus. |
 | **distr** | Marks distribution. |
 
-Also: View / Study toggle (ticks and progress saved in your browser), search (`/`), light / dark theme, offline after the first visit. On the topic-wise, imp and distr pages the page-switch buttons stay hidden and fade in as your mouse gets close.
+Also: floating `M` / `N` panels (see below), View / Study toggle (ticks and progress saved in your browser), search (`/`), light / dark theme, offline after the first visit. On the topic-wise, imp and distr pages the page-switch buttons stay hidden and fade in as your mouse gets close.
 
 ## Keyboard shortcuts
 
@@ -23,6 +23,10 @@ Also: View / Study toggle (ticks and progress saved in your browser), search (`/
 | `Esc` or `Backspace` | Back to the home page from fat, topic-wise, imp, imp or distr. |
 | `/` | Focus search. `Esc` in the box clears it. |
 | `?` | On the imp page: show the shortcuts menu. |
+| `M` | Toggle the floating text panel (draggable). |
+| `N` | Toggle the floating marks-distribution panel (draggable). |
+
+`M` and `N` work on every page and are ignored while typing in an input, textarea or select, or when Ctrl / Cmd / Alt is held.
 
 ## Project Structure
 
@@ -34,7 +38,8 @@ cn-fat/
 │   │   └── styles.css
 │   ├── js/
 │   │   ├── app.js
-│   │   └── api.js
+│   │   ├── api.js
+│   │   └── panel.js     draggable floating panels (M, N)
 │   ├── data/
 │   │   ├── modules.json
 │   │   ├── papers.json
@@ -53,6 +58,10 @@ cn-fat/
 ├── .gitignore
 └── .editorconfig
 ```
+
+## Floating Panels
+
+`public/js/panel.js` builds the `M` and `N` panels with `createPanel({ id, key, title, body, note })`. Each is a fixed overlay (no layout shift), dragged by its header, kept inside the viewport, closed with its key, `Esc` or the close button, and remembers its position for the session. To add one, add another `createPanel` call with a new `id` and `key`.
 
 ## How to Run
 

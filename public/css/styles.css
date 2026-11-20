@@ -397,3 +397,65 @@ a.mchip.pb-open:hover { color: var(--text-primary); border-color: var(--text-mut
 .mk span { display: flex; flex-direction: column; align-items: center; line-height: 1.1; } .mk span small { font-size: 11px; font-weight: 600; letter-spacing: 0; margin-top: 3px; opacity: 0.75; white-space: nowrap; }
 @media (max-width: 640px) { .mk span small { font-size: 8px; margin-top: 1px; } }
 .q[data-qn] { scroll-margin-top: 96px; }
+
+/* Floating quick panel (M) */
+.fp { position: fixed; z-index: 9999; width: 280px; max-width: calc(100vw - 16px); display: none; left: 0; top: 0;
+  background: var(--bg-glass); -webkit-backdrop-filter: blur(18px) saturate(1.4); backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid var(--border-strong); border-radius: var(--r-sm); box-shadow: var(--sh-up); color: var(--text-primary);
+  opacity: 0; transform: translateY(8px) scale(0.96); transition: opacity 180ms var(--ease), transform 180ms var(--ease); }
+.fp.fp-on { opacity: 1; transform: none; }
+.fp.fp-drag { transition: none; box-shadow: var(--sh-up), 0 0 0 1px var(--accent-primary); user-select: none; }
+.fp-head { display: flex; align-items: center; gap: 8px; padding: 8px 8px 8px 12px; cursor: grab; touch-action: none; border-bottom: 1px solid var(--border); }
+.fp.fp-drag .fp-head { cursor: grabbing; }
+.fp-grip { width: 14px; height: 14px; flex: none; opacity: .55;
+  background: radial-gradient(circle, currentColor 1.3px, transparent 1.6px) 0 0 / 5px 5px; }
+.fp-title { flex: 1; font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--text-secondary); }
+.fp-x { display: grid; place-items: center; width: 26px; height: 26px; border: 0; border-radius: 8px; background: transparent; color: var(--text-muted); cursor: pointer; transition: background var(--t), color var(--t); }
+.fp-x:hover { background: var(--accent-soft); color: var(--text-primary); }
+.fp-body { padding: 12px; display: grid; gap: 8px; }
+.fp-lbl { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
+.fp-note { width: 100%; resize: vertical; min-height: 80px; padding: 8px 10px; font: inherit; font-size: 13px; color: inherit;
+  background: var(--bg-raised); border: 1px solid var(--border); border-radius: 10px; outline: none; }
+.fp-note:focus { border-color: var(--accent-primary); }
+.fp-keys { font-size: 11px; color: var(--text-muted); line-height: 1.9; }
+.fp-keys kbd { font-family: var(--font-mono); font-size: 10.5px; padding: 1px 6px; margin-left: 4px; border: 1px solid var(--border-strong); border-radius: 5px; background: var(--bg-raised); color: var(--text-secondary); }
+@media (prefers-reduced-motion: reduce) { .fp { transition: none; } }
+.fp-tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.fp-tbl th, .fp-tbl td { padding: 5px 2px; border-bottom: 1px solid var(--border); text-align: left; }
+.fp-tbl th { font-family: var(--font-mono); font-weight: 600; color: var(--text-secondary); width: 56px; }
+.fp-tbl td { font-weight: 600; }
+.fp-tag { margin-left: 6px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--text-primary); font-size: 11px; font-weight: 500; }
+
+/* compact sizing */
+.fp { width: max-content; min-width: 0; }
+.fp-m { width: 220px; }
+.fp-head { padding: 6px 6px 6px 10px; }
+.fp-body { padding: 10px 12px 12px; gap: 0; }
+.fp-m .fp-note { min-height: 72px; }
+.fp-n .fp-tbl { min-width: 128px; }
+.fp-n .fp-body { padding: 4px 14px 10px; }
+
+/* Black floating panels (scoped to .fp only) */
+.fp {
+  --bg-glass: rgba(0,0,0,0.94); --bg-raised: #141414;
+  --border: rgba(255,255,255,0.08); --border-strong: rgba(255,255,255,0.18);
+  --text-primary: #f6f7f6; --text-secondary: #c4c7c4; --text-muted: #8a8e8a;
+  --accent-primary: #facc15; --accent-soft: rgba(250,204,21,0.18);
+  --sh-up: 0 24px 48px -16px rgba(0,0,0,0.8), 0 4px 10px rgba(0,0,0,0.5);
+  background: #000; color: #f6f7f6; color-scheme: dark;
+}
+
+.fp-m .fp-note { resize: none; overflow-y: auto; transition: height 120ms var(--ease); }
+
+/* even spacing: pill → CN label → module tabs */
+.hero { padding-bottom: var(--s2); }
+.cloud-head { margin-bottom: var(--s2); min-height: 19px; }
+
+/* marks grid fills the full width, same as the module tab bar */
+.marks-grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+
+/* each marks tile sits centred under its module tab (same column pitch as the tab bar) */
+.marks-grid { gap: 12px; padding-inline: 10px; }
+
+/* module tabs: identical width for every tab */
+.tabs .tab { flex: 1 1 0; }
